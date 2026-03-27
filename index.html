@@ -431,8 +431,8 @@
         <div class="card-title" style="margin-bottom:12px">📡 Endpoints</div>
         <div class="endpoint-row">
           <span class="badge badge-post">POST</span>
-          <span class="endpoint-path">/webhook/bagibagi</span>
-          <span class="endpoint-desc">Webhook dari BagiBagi</span>
+          <span class="endpoint-path">/webhook/saweria</span>
+          <span class="endpoint-desc">Webhook dari saweria</span>
         </div>
         <div class="endpoint-row">
           <span class="badge badge-post">POST</span>
@@ -448,10 +448,10 @@
 
       <div style="margin-top:20px">
         <div style="font-size:12px; color:var(--muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700">
-          URL Webhook untuk BagiBagi
+          URL Webhook untuk saweria
         </div>
         <div class="url-box" onclick="copyWebhookUrl(this)">
-          <span class="url-text" id="webhookUrl">https://mapsaweriachilluxe-production.up.railway.app/webhook/bagibagi</span>
+          <span class="url-text" id="webhookUrl">https://mapsaweriachilluxe-production.up.railway.app/webhook/saweria</span>
           <span class="copy-hint">📋 Klik untuk copy</span>
         </div>
       </div>
@@ -535,7 +535,7 @@
   /* ── UPDATE WEBHOOK URL SAAT SERVER URL BERUBAH ─────────── */
   document.getElementById('serverUrl').addEventListener('input', function() {
     const base = this.value.trim().replace(/\/$/, '');
-    document.getElementById('webhookUrl').textContent = base + '/webhook/bagibagi';
+    document.getElementById('webhookUrl').textContent = base + '/webhook/saweria';
   });
 
   function getServerUrl() {
